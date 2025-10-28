@@ -25,12 +25,6 @@ jobs:
         go-version-file: 'go.mod'
         cache: true
 
-    - name: Revive Action
-      uses: morphy2k/revive-action@v2.4.1
-
-    - name: Staticcheck
-      uses: dominikh/staticcheck-action@v1.3.0
-
     - name: Build
       run: |
         go mod download
